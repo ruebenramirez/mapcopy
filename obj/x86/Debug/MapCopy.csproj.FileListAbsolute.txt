@@ -1,0 +1,1 @@
+\\vmware-host\Shared Folders\Documents\Visual Studio 2010\Projects\mapcopy project\obj\x86\Debug\ResolveAssemblyReference.cache
