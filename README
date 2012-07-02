@@ -1,0 +1,10 @@
+MapCopy is a multi-threaded C# desktop application I wrote initially as a utility for Support Personnel at Appian Logistics to extract MapInfo (now Pitney Bowes) GIS data to a target as part of the software installation for product deployment on customer's infrastructure.
+
+MapCopy looks for a configuration file, registration settings (setup by the caller installation runtime), and immediately starts the extraction runtime.  This version of MapCopy was known as "clean mapcopy" as the first version was a desktop application complete with UI elements for data extraction configuration.  This 'original' MapCopy application still required a data.txt file to govern which data the extraction routine installed.
+
+------------
+This code is no longer used in production at Appian (now acquired TMW Systems) and so serves primarily as a learning and discovery exercise of Multi-Threaded application development in C# .Net.
+
+This application utilizes the .Net threadpool (http://msdn.microsoft.com/en-us/library/ms973903.aspx) as a simplified menas of threading the extraction routine of GIS data to a target machine.
+
+Delegate funcitons are utilized to update a progress bar as the extraction of GIS data "chunks" are completed.
